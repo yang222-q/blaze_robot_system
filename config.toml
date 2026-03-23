@@ -1,0 +1,8 @@
+[build]
+# Use MSVC by default, but fallback instructions provided
+target = "x86_64-pc-windows-gnu"
+
+[target.x86_64-pc-windows-gnu]
+# GNU toolchain configuration
+linker = "x86_64-w64-mingw32-gcc.exe"
+ar = "x86_64-w64-mingw32-ar.exe"
